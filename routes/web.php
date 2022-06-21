@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SocialController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,8 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('welcome');
 })->middleware(['auth', 'verified']);
+
+//.................. Google Authentication routes ...............................................
+
+Route::get('redirect', [SocialController::class, 'redirect'])->name('redirect');
+Route::get('callback/google', [SocialController::class, 'callback'])->name('callback');
