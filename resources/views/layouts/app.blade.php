@@ -45,6 +45,7 @@
 window.$crisp=[];window.CRISP_WEBSITE_ID="a99fbf6a-a546-4a95-bea4-d07ba31ac843";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
 </script>
 
+@livewireStyles
 </head>
 
 <body>
@@ -301,5 +302,7 @@ window.$crisp=[];window.CRISP_WEBSITE_ID="a99fbf6a-a546-4a95-bea4-d07ba31ac843";
 
    
     </div>
+
+  @livewireScripts
 </body>
 </html>
